@@ -1,0 +1,31 @@
+body{
+    margin: 0;padding: 0;
+}
+button, #btn-1{
+    margin: 10px;
+    padding: 5px 15px;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    background-color: #0026e1a5;
+    color: #fff;
+    cursor: pointer;
+}
+.boss{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    position:relative;
+    left: 10px;
+}
+
+#frist-div{
+
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    margin: 5px 5px;
+    border: 1px solid #000;
+    position: absolute;
+}

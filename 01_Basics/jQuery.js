@@ -48,4 +48,14 @@ $(document).ready(function () {
         $("#div-four").toggle(1000);
     });
 
+
+
+
+    $(".slide-1").click(function () {
+        $(".slide-2").slideToggle("slow");
+    })
+
+
+
+
 });
