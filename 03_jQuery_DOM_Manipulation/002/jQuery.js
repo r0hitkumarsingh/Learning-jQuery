@@ -12,6 +12,23 @@ $(document).ready(function () {
         $("#input1").val("Rohit kumar");
     });
 
+
+    $("#btn4").click(function () {
+        $("#a-tag").attr("href", "https://bing.com");
+    });
+
+    // $("#btn4").click(function () {
+    //     $("#para4").text("https://bing.com");
+    // });
+
+    $("#btn4").click(function () {
+        $("#a-tag").attr({
+            "href": "https://bing.com",
+            "title": "Go to Bing.com"
+        });
+    });
+
+
     // *******************************************************************************
 
     
