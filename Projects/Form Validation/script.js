@@ -39,10 +39,10 @@ $(document).ready(function() {
             isValid = false;
         }
 
-        // If form is valid, submit it
+        // If form is valid, show the modal
         if (isValid) {
-            alert("Form submitted successfully!");
-            // You can proceed with form submission here (e.g., using AJAX)
+            $("#successModal").css("display", "flex");
+            $("#registrationForm")[0].reset(); // Reset the form
         }
     });
 
@@ -51,4 +51,16 @@ $(document).ready(function() {
         let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     }
+
+    // Close modal when close button is clicked
+    $(".close-button").click(function() {
+        $("#successModal").css("display", "none");
+    });
+
+    // Close modal when clicking outside the modal content
+    $(window).click(function(event) {
+        if ($(event.target).is("#successModal")) {
+            $("#successModal").css("display", "none");
+        }
+    });
 });
