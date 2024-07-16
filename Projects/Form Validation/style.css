@@ -1,5 +1,4 @@
-/* style.css */
-body {
+body{
     font-family: 'Roboto', sans-serif;
     background-color: #f0f2f5;
     display: flex;
@@ -9,51 +8,51 @@ body {
     margin: 0;
 }
 
-.container {
-    background: #ffffff;
-    padding: 40px;
+.container{
+    background-color: #fff;
+    padding: 5px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 350px;
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
 }
 
-h2 {
+h2{
     text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
 
-.form-group {
+.form-group{
     margin-bottom: 20px;
     position: relative;
 }
 
-label {
+label{
     margin-bottom: 5px;
+    margin-left: 5px;
     font-weight: 500;
     color: #555;
 }
 
-input {
+input{
     padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 6px;
     width: 100%;
     box-sizing: border-box;
     transition: border-color 0.3s;
 }
 
-input:focus {
+input:focus{
     border-color: #007bff;
     outline: none;
 }
 
-.error {
+.error{
     color: #e74c3c;
     font-size: 14px;
     margin-top: 5px;
@@ -62,14 +61,16 @@ input:focus {
     left: 0;
 }
 
-button {
+button{
+    width: 50%;
+    margin: 10px  auto;
     padding: 15px;
     background: linear-gradient(to right, #007bff, #00a1ff);
     color: #fff;
     border: none;
     border-radius: 6px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
     transition: background 0.3s;
 }
 
@@ -77,11 +78,15 @@ button:hover {
     background: linear-gradient(to right, #0062cc, #008bff);
 }
 
+button:active {
+    background: linear-gradient(to right, #b3cfec, #008bff);
+}
+
 button:focus {
     outline: none;
 }
 
-.modal {
+.modal{
     display: none;
     position: fixed;
     z-index: 1;
@@ -95,8 +100,8 @@ button:focus {
     align-items: center;
 }
 
-.modal-content {
-    background-color: #ffffff;
+.modal-content{
+    background-color: #fff;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -123,10 +128,5 @@ button:focus {
 @media (max-width: 400px) {
     .container {
         width: 90%;
-        padding: 20px;
-    }
-
-    .error {
-        font-size: 12px;
     }
 }
