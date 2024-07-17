@@ -2,7 +2,7 @@ $(document).ready(function () {
    $("#registrationForm").submit(function (event) {
     event.preventDefault();
 
-   $("#.error").text("");
+   $(".error").text("");
 
     let name = $("#name").val().trim();
     let email = $("#email").val().trim();
@@ -28,7 +28,7 @@ $(document).ready(function () {
         $("#passwordError").text("Password is required!")
         isValid = false;
     }else if(password.length < 6){
-        $("#emailError").text("Password must be at least 6 characters");
+        $("#passwordError").text("Password must be at least 6 characters");
         isValid = false;
     }
 
